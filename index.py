@@ -1,11 +1,9 @@
 def main():
-    # pro1()
-    # pro2()
+    pro1()
+    pro2()
     pro3()
 # Problem 1:
-#
 # Create a class Dog. Make sure it has the attributes name, breed, color, gender. Create a function that will print all attributes of the class. Create an object of Dog in your problem1 function and print all of it's attributes.
-#
 def pro1():
     class Dog:
         def __init__(self,name,breed,color,gender):
@@ -15,15 +13,13 @@ def pro1():
             self.gender = gender
 
         def printall(self):
-            return (f"{self.name}\n{self.breed}\n{self.color}\n{self.gender}")
+            return (f"{self.name}\n{self.breed}\n{self.color}\n{self.gender}") # !! : use string formatting to take advantage of f string 
 
     d1 = Dog("Max", "Pitbull","White","Male")
     print(d1.printall())
 
 # Problem 2:
-#
 # We will keep having this problem until EVERYONE gets it right without help
-#
 # Create a function that has a loop that quits with the equal sign. If the user doesn't enter the equal sign, ask them to input another string.
 #
 def pro2():
@@ -33,18 +29,12 @@ def pro2():
             user = input("Enter something\n")
     theLoop()
 # Problem 3:
-#
 # Create a class Product that represents a product sold online. A product has a name, price, and quantity.
-#
 # The class should have several functions:
-#
 # a) One function that can change the name of the product.
-#
-#     b) Another function that can change the name and price of the product.
-#
-#     c) A last function that can change the name, price, and quantity of the product.
-#
-#     Create an object of Product and print all of it's attributes.
+# b) Another function that can change the name and price of the product.
+# c) A last function that can change the name, price, and quantity of the product.
+# Create an object of Product and print all of it's attributes.
 def pro3():
     class Product:
         def __init__(self,name,price,quantity):
@@ -74,6 +64,5 @@ def pro3():
     print(p1.name)
     print(p1.price)
     print(p1.quantity)
-
 
 main()
